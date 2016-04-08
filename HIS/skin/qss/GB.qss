@@ -1,0 +1,518 @@
+/***********************************************************/
+/* QMainWindow Style*/
+/***********************************************************/
+QMainWindow{
+    background-color: rgb(240,240,240);
+    background-image: url(none);
+    background-repeat:repeat-xy;
+}
+
+QWigdet{
+    background-color: transparent;
+}
+QDateEdit {
+    padding: 1px;
+    border-style: solid;
+    border: 1px solid rgb(240,240,240);
+    border-radius: 5px;
+    width:40px;
+    height: 30px;
+	border-width: 1px;
+}
+QToolBar {
+    background: rgb(240,240,240);
+    spacing: 0px; /* spacing between items in the tool bar */
+}
+
+
+QProgressBar {
+    border: 1px solid white;
+    text-align: right;
+}
+
+QProgressBar::chunk {
+    background-color: lightgreen;
+    width: 20px;
+}
+
+QProgressBar QLineEdit{
+    color: black;
+    padding-left: 5px;
+    font-size: 16px;
+    background-color: transparent;
+	border-width: 1px;
+    border-radius: 5px;
+}
+
+
+/* ******************QStatusBar****************** */
+QStatusBar {
+    color: white;
+    background-color: rgb(85,170,255);
+    border-top: 0.5px solid rgb(34, 125, 155);
+}
+
+QStatusBar QLabel#datatimelabel{
+    background-color: transparent;
+    font: 16px;
+    color: black;
+}
+
+QSizeGrip {
+    
+    width: 16px;
+    height: 16px;
+}
+/* ******************QStatusBar****************** */
+
+/* ******************QSplitter****************** */
+QSplitter{
+    border:none;
+}
+
+QSplitter::handle {
+    background-color: rgb(240,240,240);
+}
+
+QSplitter::handle:horizontal {
+    width: 0px;
+}
+
+QSplitter::handle:vertical {
+    height: 0px;
+}
+
+QSplitter::handle:pressed {
+    background-color: rgb(240,240,240);
+}
+
+/* ******************QSplitter****************** */
+
+/* ******************QHeaderView****************** */
+
+QHeaderView::section:checked {
+    background-color: #112233;
+ }
+
+QHeaderView::section:checked {
+    background-color: white;
+}
+
+QHeaderView{
+    background-color: white;
+}
+
+QHeaderView::section {
+    background-color: white;
+    border: none;
+    color: grey;
+    font-size: 12px;
+    min-height: 16px;
+    padding-left: 4px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+/* ******************QHeaderView****************** */
+
+/* ******************QTreeWidget****************** */
+
+
+/* ******************QTreeWidget****************** */
+
+QTableWidget{
+    border: 1px solid black;
+    background-color: transparent;
+    selection-color: black;
+}
+
+QTableWidget:disabled{
+    border: none;
+    background-color: gray;
+}
+
+QTableWidget::QHeaderView::section:checked
+{
+	background-color: red;
+}
+/* ******************QTableWidget****************** */
+QPushButton#checkable{
+	background-repeat:no-repeat;
+    background-position: center bottom;
+    background-color: transparent;
+    color: white;
+    text-align: center bottom;
+    padding-bottom: 2px;
+	border-color: rgb(3,110,184);
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+QPushButton#checkable:hover{
+    background-color: rgb(27, 118, 150);
+    color: white;
+}
+
+QPushButton#checkable:checked{
+    background-color: rgb(34, 125, 155);
+    color: white;
+   
+}
+
+QPushButton#checkable:pressed{
+    background-color: rgb(34, 125, 155);
+    color: white;
+}
+
+QPushButton#checkable:disabled{
+    background-color: gray;
+}
+/* ******************QToolButton**************** */
+QToolButton{
+    background-color: transparent;
+    color: rgb(240,240,240);
+}
+
+
+QToolButton:hover{
+    background-color: rgb(240,240,240);
+    color: white;
+    border: 1px;
+}
+
+QToolButton:disabled{
+    background-color: gray;
+    border: 1px;
+}
+
+QToolButton[popupMode="1"] { /* only for MenuButtonPopup */
+    padding-right: 0px; /* make way for the popup button */
+}
+
+QToolButton::menu-button {
+    border: none;
+}
+
+QToolButton::menu-arrow {
+    image: none;
+}
+
+QToolButton::menu-indicator {
+    image: none;
+}
+
+QToolButton:open { /* when the button has its menu open */
+    background-color: rgb(240,240,240);
+}
+/* ******************QToolButton**************** */
+
+/* ******************FTitleBar****************** */
+
+QFrame#FTitleBar{
+    background-color: rgb(240,240,240);
+}
+
+QFrame QLabel#FTitleLabel{
+    color: white;
+    /*font-family: 'Verdana';*/
+    background-color: transparent;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+/* ******************FTitleBar****************** */
+
+/* ******************FTabTile****************** */
+
+
+QWidget#FTabTile{
+    background-color: rgb(240,240,240);
+	/*border-image: url(:/skin/icons/light/appbar.adobe.acrobat.png);*/
+}
+
+QFrame#FNavgationBar_bottom{
+    background-color: rgb(240,240,240);
+    border-bottom: 0.5px solid rgb(34, 125, 155);
+	/*background-image: url(:/skin/icons/light/appbar.acorn.png);*/
+}
+
+QFrame#FNavgationBar_top{
+    background-color:rgb(240,240,240);
+    border-top: 1px solid rgb(34, 125, 155);
+}
+
+QFrame#FNavgationBar_left{
+    background-color: rgb(240,240,240);
+    border-left: 1px solid rgb(34, 125, 155);
+}
+
+QFrame#FNavgationBar_right{
+    background-color: rgb(240,240,240);
+    border-right: 1px solid rgb(34, 125, 155);
+}
+
+/* ******************FTabTile****************** */
+
+/* ******************centerwindow****************** */
+QWidget#Home{
+    background-color: rgb(240, 240, 240);
+}
+
+QWidget#Zhuyuan{
+    background-color: rgb(240, 240, 240);
+}
+
+QWidget#Yaoku{
+    background-color: rgb(240, 240, 240);
+}
+QWidget#Shujujiekou{
+    background-color: rgb(240, 240, 240);
+}
+QWidget#SystemAdmin{
+    background-color: rgb(240, 240, 240);
+}
+QWidget#Menzhen{
+    background-color: rgb(240, 240, 240);
+}
+
+QFrame#Yaofang{
+background-color: rgb(240, 240, 240);
+	background-image: url(:/skin/icons/light/appbar.add.png);
+}
+
+QFrame#RightFloatWindow
+{
+background-color: rgb(51, 79, 91);
+}
+/* ******************centerwindow****************** */
+
+/* ******************function pages****************** */
+QPushButton#Home{
+    background-image: url(:/skin/icons/dark/appbar.home.png);
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-color: transparent;
+    color: dark;
+    text-align: center bottom;
+    padding-bottom: 2px;
+	border-style: outset;
+	border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+QPushButton#Home:hover{
+    background-color: rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Home:checked{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Home:flat{
+    border: none;
+}
+
+
+QPushButton#Zhuyuan{
+    background-image: url(:/skin/his/functionlist/zhuyuan.ico);
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-color: transparent;
+    background-color: transparent;
+    color: dark;
+    text-align: center bottom;
+    padding-bottom: 2px;
+	border-style: outset;
+	border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+QPushButton#Zhuyuan:hover{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Zhuyuan:checked{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Zhuyuan:flat{
+    border: none;
+}
+
+QPushButton#Yaoku{
+    background-image: url(:/skin/his/functionlist/yaoku.ico);
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-color: transparent;
+    background-color: transparent;
+    color: dark;
+    text-align: center bottom;
+    padding-bottom: 2px;
+	border-style: outset;
+	border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-radius: 5px;
+
+}
+
+QPushButton#Yaoku:hover{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Yaoku:checked{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Yaoku:flat{
+    border: none;
+}
+
+QPushButton#Menzhen{
+    background-image: url(:/skin/his/functionlist/menzhen.ico);
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-color: transparent;
+    background-color: transparent;
+    color: dark;
+    text-align: center bottom;
+    padding-bottom: 2px;
+	border-style: outset;
+	border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-radius: 5px;
+	icon:url(:/skin/icons/Shujujiekou.ico);
+}
+
+QPushButton#Menzhen:hover{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Menzhen:checked{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Menzhen:flat{
+    border: none;
+}
+
+QPushButton#Yaofang{
+    background-image: url(:/skin/his/functionlist/yaofang.ico);
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-color: transparent;
+    background-color: transparent;
+    color: dark;
+    text-align: center bottom;
+    padding-bottom: 2px;
+	border-style: outset;
+	border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-radius: 5px;
+}
+QPushButton#Shujujiekou{
+    background-image: url(:/skin/his/functionlist/shujujiekou.ico);
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-color: transparent;
+    background-color: transparent;
+    color: dark;
+    text-align: center bottom;
+    padding-bottom: 2px;
+	border-style: outset;
+	border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-radius: 5px;
+
+}
+
+QPushButton#Shujujiekou:hover{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Shujujiekou:checked{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Shujujiekou:flat{
+    border: none;
+}
+
+QPushButton#SystemAdmin{
+    background-image: url(:/skin/his/functionlist/jichuweihu.ico);
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-color: transparent;
+    background-color: transparent;
+    color: dark;
+    text-align: center bottom;
+    padding-bottom: 2px;
+	border-style: outset;
+	border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-radius: 5px;
+
+}
+
+QPushButton#SystemAdmin:hover{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#SystemAdmin:checked{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#SystemAdmin:flat{
+    border: none;
+}
+
+
+
+QPushButton#Yaofang:hover{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Yaofang:checked{
+    background-color:  rgb(85,170,255);
+    color: dark;
+    border: 0px solid rgb(255, 127, 39);
+}
+
+QPushButton#Yaofang:flat{
+    border: none;
+}
+
+QPushButton#Record{
+    background-color: transparent;
+}
+
+QPushButton#Record:disabled{
+    background-color: gray;
+}
